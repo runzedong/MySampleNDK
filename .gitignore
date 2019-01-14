@@ -13,3 +13,5 @@
 .externalNativeBuild
 .idea/vcs.xml
 obj/
+.idea/codeStyles
+.idea/misc.xml
