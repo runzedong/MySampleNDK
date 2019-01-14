@@ -29,6 +29,6 @@ In order to configure FFmpeg C library into sample, we need to do the following:
 - Ideally we need to compile FFMpeg for `arm64`, `arm`, `x86_64`, `x86` and `mips` arch. But since most mobile devices
 are powered by ARM, so only `arm` 32 bits is workable for this project, considering backward compatibility of `arm64` arch.
 - Honestly it's huge work on compiling this library with proper configuration. Different configuration will reflect different share file size, which will directly affect app size in production concern. Here are some blogs I looked at, unfortunately they are Chinese resource. But I believes there are more valuable English resources on Google.
-[Android FFmpeg HelloWorld](https://blog.csdn.net/leixiaohua1020/article/details/47008825)
-[Android FFmpeg Basic A](https://blog.csdn.net/yhaolpz/article/details/76408829)
+[Android FFmpeg HelloWorld](https://blog.csdn.net/leixiaohua1020/article/details/47008825),
+[Android FFmpeg Basic A](https://blog.csdn.net/yhaolpz/article/details/76408829),
 [Android FFmegp Basic B](https://www.jianshu.com/p/6e556d336b1d)
