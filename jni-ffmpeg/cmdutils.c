@@ -134,7 +134,7 @@ void register_exit(void (*cb)(int ret))
 
 int exit_program(int ret)
 {
-    return ret;
+  return ret;
 }
 
 double parse_number_or_die(const char *context, const char *numstr, int type,

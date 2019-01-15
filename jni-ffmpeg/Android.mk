@@ -56,12 +56,10 @@ include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := ffmpeg-jni
-LOCAL_SRC_FILES := ffmpeg-jni.c \
-                  cmdutils.c \
-                  ffmpeg.c \
-                  ffmpeg_opt.c \
-                  ffmpeg_filter.c
+LOCAL_LDLIBS := -llog -ljnigraphics -lz -landroid
+LOCAL_CFLAGS := -Wdeprecated-declarations
+ANDROID_LIB := -landroid
+LOCAL_SRC_FILES := ffmpeg-jni.c cmdutils.c ffmpeg.c ffmpeg_opt.c ffmpeg_filter.c
 LOCAL_C_INCLUDES := /Users/runze/ffmpeg-ndk/ffmpeg-3.3.9/jni
-LOCAL_LDLIBS := -lm -llog
-LOCAL_SHARED_LIBRARIES := libavcodec libavfilter libavformat libavutil libswresample libswscale libavdevice
+LOCAL_SHARED_LIBRARIES := libavcodec libavfilter libavformat libavutil libswresample libswscale libavdevice libpostproc
 include $(BUILD_SHARED_LIBRARY)

@@ -1,3 +1,4 @@
 APP_ABI := armeabi-v7a
 APP_PLATFORM=android-16
 NDK_TOOLCHAIN_VERSION=4.9
+APP_BUILD_SCRIPT := ./Android.mk

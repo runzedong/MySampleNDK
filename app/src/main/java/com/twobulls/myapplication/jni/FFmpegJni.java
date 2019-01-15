@@ -2,7 +2,7 @@ package com.twobulls.myapplication.jni;
 
 public class FFmpegJni {
 
-    public static native int run(String[] commands);
+    public static native void run(String[] commands);
 
     static {
         System.loadLibrary("avcodec-57");
@@ -13,5 +13,6 @@ public class FFmpegJni {
         System.loadLibrary("postproc-54");
         System.loadLibrary("swscale-4");
         System.loadLibrary("swresample-2");
+        System.loadLibrary("ffmpeg-jni");
     }
 }

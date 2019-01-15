@@ -10,9 +10,9 @@ extern "C" {
 /*
  * Class:     com_twobulls_myapplication_jni_FFmpegJni
  * Method:    run
- * Signature: ([Ljava/lang/String;)I
+ * Signature: ([Ljava/lang/String;)V
  */
-JNIEXPORT jint JNICALL Java_com_twobulls_myapplication_jni_FFmpegJni_run
+JNIEXPORT void JNICALL Java_com_twobulls_myapplication_jni_FFmpegJni_run
   (JNIEnv *, jclass, jobjectArray);
 
 #ifdef __cplusplus

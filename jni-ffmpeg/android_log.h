@@ -1,7 +1,7 @@
 #ifdef ANDROID
 #include <android/log.h>
 #ifndef LOG_TAG
-#define  MY_TAG   "MYTAG"
+#define  MY_TAG   "FFMPEG_ANDROID"
 #define  AV_TAG   "AVLOG"
 #endif
 #define LOGE(format, ...)  __android_log_print(ANDROID_LOG_ERROR, MY_TAG, format, ##__VA_ARGS__)
